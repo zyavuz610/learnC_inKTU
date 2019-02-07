@@ -1,3 +1,11 @@
+/*
+  - Tanışalım
+  - Konu tabanlı yerine beceri tabanlı
+  - En az 3 kanal
+    - görme, işitme, dokunma
+  - Bilgi + Sayar
+    - bu ders sayma eylemi ile ilgili
+*/
 #include <stdio.h>
 // bu bir yorum satırıdır
 /* bu
@@ -10,6 +18,11 @@ yorum
 
 bloğudur
 
+*/
+/*
+  Yorum satırı kullanmak faydalıdır. 
+  Çok eski zamanların birinde programcının biri bir iş için bir kod yazmış, ancak açıklama satırı yazmayı ihmal etmiş. Tam müşteriye sunum yapacağı sırada program hata vermiş, hatayı düzeltmek istemiş ama koda bakmış bakmış hiç bir şey hatırlamıyor, "Yahu ben burda ne demek istedim" diye mırıldanıp durmuş. En sonunda pes etmiş ve şöyle demiş:
+  "Bu kodu yazarken ne yapmak istediğimi bir ben bir de Allah biliyordu, şimdi sadece Allah biliyor"
 */
 
 int main(void) {
