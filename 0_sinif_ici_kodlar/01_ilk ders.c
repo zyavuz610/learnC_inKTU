@@ -2,7 +2,7 @@
   - Tanışalım
   - Konu tabanlı yerine beceri tabanlı
   - En az 3 kanal
-    - görme, işitme, dokunma
+    - görme, işitme, dokunma (kod yazma)
   - Bilgi + Sayar
     - bu ders sayma eylemi ile ilgili
 */
