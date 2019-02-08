@@ -1,7 +1,7 @@
 /*
-  Zafer Yavuz
-  Son Güncelleme: 08.02.2019
-  Bugünün probelemi: 5 işlem ve sonucu ekrana yazmak
+  Yazar             : Zafer Yavuz
+  Son Güncelleme    : 08.02.2019
+  Bugünün probelemi : 5 işlem ve sonucu ekrana yazmak
     - +, -, *, /, %
     - 2 adet sayı girilecek
     - 4 işlem yapılıp sonuç üretilecek
@@ -26,9 +26,10 @@ int main(void) {
   int i_mod = i_sayi1 % i_sayi2;
   char ch = '%'; // % karakterini ekrana yazarken kullandık.
   printf("%d %c %d = %d\n",i_sayi1,ch,i_sayi2,i_mod);
+  // Ekran: %
 /*
   Burada dikkat edilecek noktalar
-    - programın deneme aşamasında kullanıcıdan alınacak sayıları sabir olarak vermek daha yararlı olur.
+    - programın deneme aşamasında kullanıcıdan alınacak sayıları sabit olarak vermek daha yararlı olur.
     - ekrana özel bir karakter yazamadığımızda ch karakter değişkeni kullanabiliriz. char ch = '%';
     - printf() içerisinde birden çok değişken yazdırabiliriz.
     - her sonuç için ayrı ayrı değişken tanımlamaya gerek kalmadan tek bir sonuç değişkeni kullanabiliriz.
