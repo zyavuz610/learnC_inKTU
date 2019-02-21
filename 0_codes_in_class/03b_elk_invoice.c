@@ -16,9 +16,9 @@ int main(void) {
   int T2_son = 7440;
   int T3_ilk = 8320;
   int T3_son = 8410;
-  float T1_fiyat = 51.5;
-  float T2_fiyat = 102;
-  float T3_fiyat = 70.5;
+  float T1_fiyat = 20;
+  float T2_fiyat = 40;
+  float T3_fiyat = 10;
   char tarife = 's'; // 'a'
   /*
   eğer standart tarife ise tüm yakılan elk. T3 tarifensinden hesap edilecek
