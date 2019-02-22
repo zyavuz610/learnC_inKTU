@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-  int num = 348377;
+  int num = 348395;
   int h1 = (num%10)/1;
   int h2 = (num%100)/10;
   int h3 = (num%1000)/100;
@@ -15,7 +15,15 @@ int main(void) {
   top += h4 + '0';
   top += h5 + '0';
   top += h6 + '0';
-  int hash = top%97;
-  printf("%d -> %d",num,hash);
+  int hash = top%147;
+  printf("%d -> %d\n",num,hash);
+  for(int i=0;i<10;i++){
+    printf("%d\n",hash);
+  }
+  int i=0;
+  while(i<10){
+    printf("%d\n",hash);
+    i++;
+  }
   return 0;
 }
