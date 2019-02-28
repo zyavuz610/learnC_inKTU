@@ -51,7 +51,7 @@ int main(void) {
   printf("(Maas:Vergi):(%.2f,%.2f)",maas,vergi);
 */
 //---------------------------------------
-  
+ /* 
   char harf_not;
   float ara_sinav=53,donem_sonu=45;
   float ortalama = 0.5*ara_sinav + 0.5*donem_sonu;
@@ -78,6 +78,7 @@ int main(void) {
   }
   char ch = '%';
   printf("[%.0f,%.1f]=%.2f (%c) \t %c",ara_sinav,donem_sonu,ortalama,harf_not,ch);
+  */
 /*
   if(harf_not == 'F'){
     printf("Kaldı");
@@ -95,6 +96,8 @@ int main(void) {
     printf("eksik giden bir şeyler var");
   }
   */
+
+/*  
   switch(harf_not){
     case 'F' :
               printf("Kaldı");
@@ -114,6 +117,45 @@ int main(void) {
     default :
               printf("eksik giden bir şeyler var");
   }
-
+*/
+//----------------------------------------
+// koşul operatörü
+  float maas = 1320;
+  float vergi = 0;
+  /*
+  if(maas<=1000){
+    vergi = 0.10 * maas;
+  }
+  else{
+    vergi = 0.15 * maas;
+  }
+  */
+  vergi = (maas<=1000)?0.10*maas:0.15*maas;
+  printf("Vergi:%.2f",vergi);
+//----------------------------------------
+// koşul operatörü devam
+  int sene = 1920,yy;
+  int kalan = sene%100;
+  if(kalan == 0){
+    yy = sene/100;
+  }
+  else{
+    yy = sene/100+1;
+  }
+//----------------------------------------
+// daha çok döngü (tekrarlı ifadeler)
+/*
+  +0) 1-100 arası sayıları yazın
+  +1) 20-200 arası sayıları ters sırada yazın
+  +2) 1-100 arası tek ve çift sayıları
+  +3) 1000 den küçük 3 ve[ya] 5 in katı olan sayılar
+  4) 422 sayısının pozitif tam sayı bölenleri
+  5) 455 sayısının pozitif tam sayı bölenleri toplamı
+  6) 530 sayısının pozitif tam sayı bölenleri sayısının
+  7) ekrana üçgen çizin
+  8) ekrana ascii tablosunu çizin
+  9) ekrana kare(dikdörtgen) çizin
+  repl.it/@ZaferYavuz1/c41a değiştiridm
+*/
   return 0;
 }
