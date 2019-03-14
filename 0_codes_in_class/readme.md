@@ -32,3 +32,9 @@
   * büyük, küçük harf dönüşümü
   * stringi tersten yaz
   * "23+55" işleminin sonucu
+* Matris İşlemleri
+  * Matrisin 2 sütununu/satırını yer değiştir
+  * Matrisin satırlar/sütunlar toplamını/ortalamasını/min/max değerlerini bul
+  * Matris içerisinde en büyük çarpıma sahip ardışık n sayının kaç olduğunu ve nerde olduğunu bul (yatay, dikey, çapraz)
+  * matrislerin sütunlarını toplam/mutlak_değer değrine göre sırala
+  * matris içerisinde küçük bir matris ara, kaçıncı satır,sütundan olduğunu bul
