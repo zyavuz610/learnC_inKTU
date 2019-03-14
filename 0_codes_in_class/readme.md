@@ -23,3 +23,12 @@
 * doğal bir sayının rakamları toplamı
 * satranç tahtası
 * banka atm problemi
+## Problemler-3
+* Dizi sıralama
+* String işlemleri
+  * string harf sıralama
+  * string birleştirme
+  * string bölme, substr
+  * büyük, küçük harf dönüşümü
+  * stringi tersten yaz
+  * "23+55" işleminin sonucu
