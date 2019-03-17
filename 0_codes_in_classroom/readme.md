@@ -38,3 +38,15 @@
   * Matris içerisinde en büyük çarpıma sahip ardışık n sayının kaç olduğunu ve nerde olduğunu bul (yatay, dikey, çapraz)
   * matrislerin sütunlarını toplam/mutlak_değer değrine göre sırala
   * matris içerisinde küçük bir matris ara, kaçıncı satır,sütundan olduğunu bul
+## Fonksiyonlar
+  * 1000 den küçük kaç asal sayı var
+  * 1000 den küçük mükemmel sayılar
+  * verilen bir sayının rakamları toplamı
+  * verilen bir sayının ikili tabana çevrilmesi
+  * polindrom sayıların bulunması (11311 gibi)
+  * polindrom kelime Kontrolü
+  * matris toplamı
+  * matris çarpımı
+  * matrisin tranpozunu bulmak
+  * iki dizinin vektörel/skalar çarpımı
+  * verilen 1D veya 2D dizinin standart sapmasının bulunması
