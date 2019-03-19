@@ -4,7 +4,7 @@
     - Paramtre ve Argüman
       A parameter is a variable in a method definition. When a method is called, the arguments are the data you pass into the method's parameters.
     - Call by value
-    - Call by refrence (ayrıntılar pointer gördükten sonra)
+    - Call by pointer (ayrıntılar pointer gördükten sonra)
     - Scope rules
       - global, local, formal değişkenler
       - aynı isimde global/local/formal değişkenler
