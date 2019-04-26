@@ -1,5 +1,13 @@
+/*
+  Bu dosyada;
+    fprintf(fp,str)
+    puts(str), fputs(str,fp)
+*/
 
-// Write to a text file using fprintf()
+
+
+
+/*
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +15,7 @@ int main()
 {
    int num;
    FILE *fptr;
-   fptr = fopen("C:\\program.txt","w");
+   fptr = fopen("program.txt","w");
 
    if(fptr == NULL)
    {
@@ -23,56 +31,38 @@ int main()
 
    return 0;
 }
-
+*/
 
 //***********************************************************************
-/*
-// C program to Open a File, 
-// Write in it, And Close the File 
 
 # include <stdio.h> 
 # include <string.h> 
-
 int main( ) 
 { 
-
-	// Declare the file pointer 
 	FILE *filePointer ; 
-	
-	// Get the data to be written in file 
-	char dataToBeWritten[50] 
-		= "GeeksforGeeks-A Computer Science Portal for Geeks"; 
+	 
+	char data[50] = "Ben C canavarıyım"; 
 
-	// Open the existing file GfgTest.c using fopen() 
-	// in write mode using "w" attribute 
-	filePointer = fopen("GfgTest.c", "w") ; 
+  puts(data); // ekrana yazar
+  printf("%s\t",data);
+
+	filePointer = fopen("deneme.txt", "w") ; 
 	
-	// Check if this filePointer is null 
-	// which maybe if the file does not exist 
-	if ( filePointer == NULL ) 
-	{ 
-		printf( "GfgTest.c file failed to open." ) ; 
+	if ( filePointer == NULL ){ 
+		printf( "dosya açılamadı\n" ) ; 
 	} 
 	else
 	{ 
-		
-		printf("The file is now opened.\n") ; 
-		
-		// Write the dataToBeWritten into the file 
-		if ( strlen ( dataToBeWritten ) > 0 ) 
+
+		if ( strlen ( data ) > 0 ) 
 		{ 
-			
-			// writing in the file using fputs() 
-			fputs(dataToBeWritten, filePointer) ; 
+ 
+			fputs(data, filePointer) ; 
 			fputs("\n", filePointer) ; 
 		} 
-		
-		// Closing the file using fclose() 
+
 		fclose(filePointer) ; 
-		
-		printf("Data successfully written in file GfgTest.c\n"); 
-		printf("The file is now closed.") ; 
+
 	} 
 	return 0;		 
 } 
-*/
