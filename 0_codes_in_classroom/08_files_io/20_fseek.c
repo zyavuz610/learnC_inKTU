@@ -1,33 +1,21 @@
-
-
-// Read from a binary file using fread()
-#include <stdio.h>
-#include <stdlib.h>
-
-struct threeNum
-{
-   int n1, n2, n3;
-};
-
-int main()
-{
-   int n;
-   struct threeNum num;
-   FILE *fptr;
-
-   if ((fptr = fopen("C:\\program.bin","rb")) == NULL){
-       printf("Error! opening file");
-
-       // Program exits if the file pointer returns NULL.
-       exit(1);
-   }
-
-   for(n = 1; n < 5; ++n)
-   {
-      fread(&num, sizeof(struct threeNum), 1, fptr); 
-      printf("n1: %d\tn2: %d\tn3: %d", num.n1, num.n2, num.n3);
-   }
-   fclose(fptr); 
+#include <stdio.h> 
   
-   return 0;
-}
+int main() 
+{ 
+    FILE *fp;
+    char d[20]; 
+    fp = fopen("deneme.txt", "r"); 
+      
+    // Moving pointer to end 
+    fseek(fp, 12, SEEK_CUR); 
+    fgets ( d, 5, fp );
+    puts(d);
+
+    fseek(fp, -12, SEEK_CUR);
+    fgets ( d, 3, fp );
+    puts(d);
+    // Printing position of pointer 
+    printf("%ld", ftell(fp)); 
+  
+    return 0; 
+} 
