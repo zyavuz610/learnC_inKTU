@@ -42,32 +42,25 @@ struct - konular
 8) fonksiyonlara parametre aktarımı
     call by value ile normal değişken gibi direk aktarılır,
     orjinal değerler değişmez
-
         void f(struct Ogrenci o1,struct Ogrenci o2);
-
     call by pointer ile adresler aktarılır
     struct dizileri de bu yöntemle fonksiyonlara aktarılır
         
         void f(struct Ogrenci *o1,struct Ogrenci *o2);
-
 9) geri dönüş değeri struct olan fonksiyonlara
     tek bir struct geri dönecekse normal değişken gibi return
-
     struct Ogrenci f(){
         struct Ogrenci o;
         ...
         return o;
     }
-
     struct dizisi şeklinde geri döndürülecekse pointer şeklinde
-
     struct Ogrenci * f(){
         struct Ogrenci *o;
         o = (struct Ogrenci *)malloc(sizeof(struct Ogrenci)*n);
         ...
         return o;
     }
-
 */
 
 #include <stdio.h>
@@ -76,10 +69,6 @@ struct - konular
 #include <unistd.h>
 #include <string.h>
 
-char sesli[] = {'A','E','I','O','U','\0'};
-char sessiz[] = {'B','C','D','F','K','L','M','N','S','T','Z','V','\0'};
-int sli_say = 5;
-int ssiz_say = 12;
 
 struct Ogrenci {
   char ad[5];
@@ -123,6 +112,10 @@ void ortalama_bul(struct Ogrenci *o1){
 }
 
 void rasgele_doldur(struct Ogrenci o[],int n){
+    char sesli[] = {'A','E','I','O','U','\0'};
+    char sessiz[] = {'B','C','D','F','K','L','M','N','S','T','Z','V','\0'};
+    int sli_say = 5;
+    int ssiz_say = 12;
     char str[5] = "BABA";
     srand( (unsigned)time( NULL ) );
     for(int i=0;i<n;i++){
@@ -163,27 +156,21 @@ void yerdegis(struct Ogrenci *o1,struct Ogrenci *o2){
   char Tad[5];
   int Tas,Tfn,Tgk;
   float Tort;
-
   strcpy(Tad,o1->ad);
   strcpy(o1->ad,o2->ad);
   strcpy(o2->ad,Tad);
-
   Tas = o1->as;
   o1->as = o2->as;
   o2->as = Tas;
-
   Tfn = o1->fn;
   o1->fn = o2->fn;
   o2->fn = Tfn;
-
   Tort = o1->or;
   o1->or = o2->or;
   o2->or = Tort;
-
   Tgk = o1->gk;
   o1->gk = o2->gk;
   o2->gk = Tgk;
-
 */
 
   struct Ogrenci tempO;
@@ -201,4 +188,3 @@ void sirala(struct Ogrenci o[],int n){
     }
   }
 }
-// https://repl.it/@ZaferYavuz1/struct
