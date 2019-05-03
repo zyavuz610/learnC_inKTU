@@ -69,13 +69,12 @@ struct - konular
 #include <unistd.h>
 #include <string.h>
 
-
 struct Ogrenci {
-  char ad[5];
-  int as;
-  int fn;
+  char  ad[5];
+  int   as;
+  int   fn;
   float or;
-  int gk;
+  int   gk;
 };
 
 struct Ogrenci * yer_ayir(int);
@@ -84,8 +83,11 @@ void rasgele_doldur(struct Ogrenci[],int);
 void ortalamalar(struct Ogrenci *,int);
 void sirala(struct Ogrenci[],int);
 void yerdegis(struct Ogrenci *,struct Ogrenci *);
+int Zstrcmp(char *s1,char *s2);
 
 int main(void) {
+
+  printf("%d\n",Zstrcmp("adana","adanada"));
   int n=20;
   struct Ogrenci *o;
 
@@ -178,11 +180,30 @@ void yerdegis(struct Ogrenci *o1,struct Ogrenci *o2){
   *o1 = *o2;
   *o2 = tempO;
 }
-
+int Zboy(char *str){
+  int i=0;
+  while(str[i] != 0){
+    i++;
+  }
+  return i;
+}
+int Zstrcmp(char *s1,char *s2){
+  int i=0,fark;
+  while(s1[i] != 0 && s2[i] !=0){
+    //printf("%c - %c \n",s1[i],s2[i]);
+    fark = s1[i] - s2[i];
+    if(fark != 0){
+      return fark;
+    }
+    i++;
+  }
+  return s1[i]-s2[i];
+}
 void sirala(struct Ogrenci o[],int n){
   for(int i=0;i<n;i++){
     for(int j=i+1;j<n;j++){
-      if(strcmp(o[i].ad, o[j].ad)<0){
+      if(Zstrcmp(o[i].ad, o[j].ad)<0){
+
         yerdegis(&o[i],&o[j]);
       }
     }
