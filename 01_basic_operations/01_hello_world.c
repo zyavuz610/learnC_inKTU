@@ -53,7 +53,7 @@ int main(void) {
   return 0;
 }
 /* Eve Götürülecek Bilgiler
-- her programda mani() fonk. olması gerekir
+- her programda main() fonk. olması gerekir
 - ekrana bir şey yazmak için printf() fonk. kullanırız
   - yeni satıra geçmek için: \n
 - her program 2 bileşene sahiptir
