@@ -14,7 +14,7 @@
 * 1000 den küçük 3 ve[ya] 5 in katı olan sayılar
 * 422 sayısının pozitif tam sayı bölenleri
 * 455 sayısının pozitif tam sayı bölenleri toplamı
-* 530 sayısının pozitif tam sayı bölenleri sayısının
+* 530 sayısının pozitif tam sayı bölenleri sayısı
 * ekrana üçgen çizin
 * ekrana ascii tablosunu çizin
 * ekrana kare(dikdörtgen) çizin
